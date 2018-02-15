@@ -1,0 +1,66 @@
+@font-face {
+  font-family: 'yagura';
+  src: url('./g_squarebold_kana_005.ttf');
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-shadow: border-box;
+}
+
+body {
+  font-family: 'yagura';
+}
+
+body > div {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+h1 {
+  padding: 15px 0;
+  color: #333;
+  font-size: 3em;
+  display: flex;
+}
+
+h1 > span {
+  height: 1.5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.5em;
+}
+
+h1 > span:first-child {
+  background: #ffc268;
+  color: #fff;
+  border-radius: 100% 80% / 80% 85% 80% 90%;
+}
+
+p {
+  color: #999;
+  letter-spacing: 7px;
+  transform: skewX(-2deg);
+  font-size: 2em;
+}
+
+@media only screen and (max-width: 770px) {
+  h1 {
+    padding: 20px 0;
+    font-size: 2.75em;
+  }
+  h1 > span {
+    width: 1.4em;
+    height: 1.4em;
+  }
+  p {
+    font-size: 1.7em;
+    text-align: center;
+  }
+}
