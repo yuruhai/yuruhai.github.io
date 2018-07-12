@@ -47,7 +47,24 @@ p {
   color: #999;
   letter-spacing: 7px;
   transform: skewX(-2deg);
-  font-size: 2em;
+  font-size: 1.5em;
+}
+
+a {
+  background: #ffc268;
+  padding: 20px;
+  color: #fff;
+  border-radius: 17% 10% / 30% 85% 30% 70%;
+  text-decoration: none;
+  font-size: 1.1em;
+  letter-spacing: 2px;
+  display: block;
+  margin: 50px 0 0;
+  transition: all .3s;
+}
+
+a:hover {
+  opacity: 0.8;
 }
 
 @media only screen and (max-width: 770px) {
@@ -60,7 +77,11 @@ p {
     height: 1.4em;
   }
   p {
-    font-size: 1.7em;
+    font-size: 1.3em;
     text-align: center;
+  }
+  a {
+    font-size: 1em;
+    margin: 45px 0 0;
   }
 }
